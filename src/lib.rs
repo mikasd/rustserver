@@ -5,7 +5,7 @@ use std::sync::Arc;
 
 pub struct ThreadPool{
     workers: Vec<Worker>,
-    sender: mspc::Sender<Job>,
+    sender: mpsc::Sender<Job>,
 }
 
 struct Job;
